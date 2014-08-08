@@ -1,0 +1,11 @@
+C:\Users\dmt\Documents\Visual Studio 2013\Projects\ug003\ug003\bin\Release\ug003.exe.config
+C:\Users\dmt\Documents\Visual Studio 2013\Projects\ug003\ug003\bin\Release\ug003.exe
+C:\Users\dmt\Documents\Visual Studio 2013\Projects\ug003\ug003\bin\Release\ug003.pdb
+C:\Users\dmt\Documents\Visual Studio 2013\Projects\ug003\ug003\bin\Release\HidLibrary.dll
+C:\Users\dmt\Documents\Visual Studio 2013\Projects\ug003\ug003\bin\Release\NAudio.dll
+C:\Users\dmt\Documents\Visual Studio 2013\Projects\ug003\ug003\bin\Release\NAudio.pdb
+C:\Users\dmt\Documents\Visual Studio 2013\Projects\ug003\ug003\bin\Release\NAudio.xml
+C:\Users\dmt\Documents\Visual Studio 2013\Projects\ug003\ug003\bin\Release\HidLibrary.pdb
+C:\Users\dmt\Documents\Visual Studio 2013\Projects\ug003\ug003\obj\Release\ug003.csprojResolveAssemblyReference.cache
+C:\Users\dmt\Documents\Visual Studio 2013\Projects\ug003\ug003\obj\Release\ug003.exe
+C:\Users\dmt\Documents\Visual Studio 2013\Projects\ug003\ug003\obj\Release\ug003.pdb

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*" Name="setupUg003" Language="1033" Version="1.0.0.0" Manufacturer="dmt" UpgradeCode="f6371cec-d7f1-4fbd-b5f9-a929a2a4ec1a">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate EmbedCab="yes"/>
+
+		<Feature Id="ProductFeature" Title="CBR_Ug003" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+		</Feature>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="Ug003" />
+			</Directory>
+		</Directory>
+	</Fragment>
+
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+			<Component Id="InstallService" Guid="69b2ab86-2849-4ff2-b844-c1a1ba7066e0">
+        <File Id="ug003.exe" Source="$(var.ug003.TargetPath)" Vital="yes"/>
+        <File Id="ug003.exe.config" Source="$(var.ug003.TargetPath).config" CompanionFile="ug003.exe"/>
+        <File Id="naudio.dll" Source="$(var.ug003.TargetDir)NAudio.dll" CompanionFile="ug003.exe" />
+        <File Id="hidlibrary.dll" Source="$(var.ug003.TargetDir)HidLibrary.dll" CompanionFile="ug003.exe" />        
+        
+        <ServiceInstall Id="ug003_install"
+                        Name="ug003"
+                        DisplayName="ug003"
+                        ErrorControl="normal"
+                        Type="ownProcess"
+                        Start="auto"                     
+                        Vital="yes">       
+        </ServiceInstall>
+        
+        <ServiceControl Id="ug003_control"
+                        Name="ug003"
+                        Start="install"
+                        Stop="both"
+                        Remove="uninstall"
+                        Wait="yes"/>
+      </Component>
+		</ComponentGroup>
+	</Fragment>
+</Wix>

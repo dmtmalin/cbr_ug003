@@ -1,0 +1,2 @@
+C:\Users\dmt\Documents\Visual Studio 2013\Projects\ug003\setupUg003\bin\Release\setupUg003.msi
+C:\Users\dmt\Documents\Visual Studio 2013\Projects\ug003\setupUg003\bin\Release\setupUg003.wixpdb
